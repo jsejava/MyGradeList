@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>online list</title>
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="./setup/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./setup/css/yeti.css">
+    <!-- font awesome-->
+    <script src="./setup/js/all.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./setup/css/online_list.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body data-spy="scroll" data-target="#navbarResponsive"> 
+
+        <!--start app page-->
+
+        <div id="app">
+    
+        <!--navigation-->
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <h1 id="logo" class="display-4" style="margin-right: 50px;">
+            <i class="fas fa-book-open"></i>
+            My<span class="text-primary">Grade</span>List</h1>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a href="home.html" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+            <a href="./app.html" class="nav-link"><i class="fas fa-book-open "></i> MyGradeListApp</a>
+            </li>
+            <li class="nav-item">
+                <a href="./text_help.html" class="nav-link"><i class="fas fa-play-circle "></i> HELP</a>
+            </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--end navigation-->
+
+        <div class="caption">
+           <div class="wel">
+               <h2>Welcome! here, is your list</h2>
+           </div>
+        <form id="student-form"> 
+        </form>
+        <div id="list">
+            <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                <th>name</th>
+                <th>English</th> 
+                <th>French</th>
+                <th>Phs</th> 
+                <th>Maths</th>
+                <th>Web Tec</th> 
+                <th>Comp Found</th>
+                <th>average</th>
+                <th>grade</th>
+                <th>ID number</th>
+                </tr>
+            </thead>
+        <tbody id="student-list"></tbody>
+        </table>
+        </div>
+</div>
+<!--end app page-->
+    <!--jquery-->
+    <script src="./setup/js/jquery.js"></script>
+    <!--bootstrap js-->
+    <script src="./setup/js/jquery_1.js"></script>
+    <script src="./setup/js/bootstrap.bundle.js"></script>
+    <!--js-->
+    <script src="./setup/js/app_1.js"></script>
+    <script src="./setup/js/login.js"></script>
+</body>
+</html>

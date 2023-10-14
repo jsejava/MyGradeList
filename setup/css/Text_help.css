@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?familly=lato:400,700');
+body{
+  color: black;
+  padding: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: tahoma;
+}
+.btn:hover{
+  background-color: #1ebba3;
+}
+p{
+  font-size: large;  
+}
+h1{
+  text-align: center;
+}
+img{
+  width: 40px; 
+  height: 40px; 
+  border-radius: 500px;
+}
+.feature svg.svg-inline--fa{
+  color: #1ebba3;
+}
+.feature svg.svg-inline--fa:hover{
+  color: red;
+}
+.content{
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+#box button{
+  height: 30px;
+  width: 15%;
+  font-size: 15px;
+  margin-right: 20px;
+  background: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: #1ebba3; 
+}
+#box button:hover{
+  background-color: #1ebba3; 
+}
+.btn1{
+  outline: none;
+  width: 15%;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 10px;  
+  background: none; 
+}
+.btn2{
+  outline: none;
+  width:15%;
+  height: 40px;
+ 
+  font-size: 22px;
+  border-radius: 10px;  
+  background: none; 
+}
+.btn3{
+  outline: none;
+  width: 15%;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 10px;  
+  background: none; 
+  font-size: 22px;
+}
+.btn4{
+  outline: none;
+  width: 15%;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 10px;  
+  background: none; 
+  font-size: 22px;
+}
+.btn5{
+  outline: none;
+  width:15%;
+  height: 35px;
+  font-weight:bold;
+  font-size: 15px;
+  background: none;
+  border-radius: 10px;
+}
+.btn6{
+  outline: none;
+  width:11%;
+  height: 35px;
+  font-weight:bold;
+  font-size: 15px;
+  background: none;
+  border-radius: 10px;
+}
+
+.link a{
+  color: white;
+  text-decoration: none;
+}
+.link a:hover{
+  color: #1ebba3;
+}
+label{
+  font-size: large;  
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="./setup/css/login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    <div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+<div class="social-icons">
+    <p><img src="./img/like.jpg">Login in to synchronize your list<br>Login in to access your onligne list </p>
+    <p><img src="./img/like.jpg">Register to have an account</p>
+</div>
+<form action="online_list_wassce.html" id="login" class="input-group">
+    <input type="text" id="name" class="input-field" placeholder="User Id" required>
+    <input type="text" class="input-field" placeholder="Enter Password" required>
+    <input type="checkbox" class="check-box"><span>Remember Password</span>
+    <button type="submit" class="submit-btn">Log in</button>
+    <br>
+    <a href="home.html"> <button type="button"class="submit-btn">Home</button></a>
+</form>
+<form action="register.html" id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="User Id" required>
+    <input type="text" class="input-field" placeholder="Email Id" required>
+    <input type="text" class="input-field" placeholder="Enter Password" required>
+    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+    <button type="submit" class="submit-btn">Register</button>
+    <br>
+    <a href="home.html"> <button type="button"class="submit-btn">Home</button></a>
+</form>
+</div>
+</div>
+</body>
+<script src="./setup/js/login.js"></script>
+</html>

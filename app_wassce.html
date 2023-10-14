@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyGradeListApp | Wassce</title>
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="./setup/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./setup/css/yeti.css">
+    <!-- font awesome-->
+    <script src="./setup/js/all.js"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./setup/css/app_wassce.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body data-spy="scroll" data-target="#navbarResponsive"> 
+
+        <!--start app page-->
+
+        <div id="app">
+    
+        <!--navigation-->
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <h1 id="logo" class="display-4" style="margin-right: 50px;">
+            <i class="fas fa-book-open"></i>
+            My<span class="text-primary">Grade</span>List</h1>
+            <button id="showForm" class="btn5" type="button">Back To The Form</button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <a href="login_wassce.html"><button id="showFormSync" class="btn6" type="button"> Synchonize list</button></a>
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a href="./text_help.html" class="nav-link"><i class="fas fa-play-circle "></i> HELP</a>
+                </li>         
+                </ul>
+            </div>
+        </nav>
+
+        <!--end navigation-->
+
+        <div class="caption">
+        <form id="student-form">
+            <div id="main">
+                <div id="head"> 
+                <label style="margin-left: 15px;">Name</label> <input type="text" id="name"
+                style="width:200px; margin-left: 15px;margin-right: 15px; color: white;border-radius: 5px;"> 
+                <label>Candidate's Number</label> <input type="text" id="ID" style="width:250px; margin-left: 15px;
+                color: white;border-radius: 5px;">
+                </div>
+    <div id="box">     
+    <div id="Subjet">
+    <button type="button" onclick="InfoQuizzes()">SUBJECTS <i class="fas fa-chevron-right"></i></button>
+    <input type="text" id="Subjet1">
+    <input type="text" id="Subjet2">
+    <input type="text" id="Subjet3">
+    <input type="text" id="Subjet4">
+    </div>
+    <button type="button" onclick="InfoAssignments()">SCORES <i class="fas fa-chevron-right"></i></button>
+    <input type="text" id="Score1">
+    <input type="text" id="Score2">
+    <input type="text" id="Score3">
+    <input type="text" id="Score4">
+    <div id="Subjet">
+        <button type="button" onclick="InfoMidsem()">SUBJECTS <i class="fas fa-chevron-right"></i></button>
+        <input type="text" id="Subjet5">
+        <input type="text" id="Subjet6">
+        <input type="text" id="Subjet7">
+        <input type="text" id="Subjet8">
+        </div>
+        <button type="button" onclick="InfoExams()">SCORES <i class="fas fa-chevron-right"></i></button>
+        <input type="text" id="Score5">
+        <input type="text" id="Score6">
+        <input type="text" id="Score7">
+        <input type="text" id="Score8">
+    </div>
+            <div id="btn">
+            <button class="btn1" type="button" onclick="rado()">Demo form fill</button>
+            <button class="btn2" type="button" onclick="total()">Calculate</button>
+            <button class="btn3" type="submit" value="Add To The List">Add To The List</button>
+            <button id="showList" class="btn4" type="button">Open List</button>
+            </div>
+            </div>    
+        <div id="result">
+        <div id="head1"><h1>Total</h1></div>
+            <div id="total">
+            <div id="average">   
+                <label style="margin-right: 70px;margin-left: 20px; font-weight: bolder;">Subjects</label>
+                <label style="margin-right: 80px; font-weight: bolder;">Score</label>
+                <label style="margin-right: 50px; font-weight: bolder;">Grade</label>
+                <label style="font-weight: bolder;">Interpretation</label>  
+                <br>      
+                <input id="BoxA1" type="button" value="" class="btn">
+                <input id="BoxA2" type="button" value="" class="btn">
+                <input id="BoxA3" type="button" value="" class="btn">
+                <input id="BoxA4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxB1" type="button" value="" class="btn">
+                <input id="BoxB2" type="button" value="" class="btn">
+                <input id="BoxB3" type="button" value="" class="btn">
+                <input id="BoxB4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxC1" type="button" value="" class="btn">
+                <input id="BoxC2" type="button" value="" class="btn">
+                <input id="BoxC3" type="button" value="" class="btn">
+                <input id="BoxC4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxD1" type="button" value="" class="btn">
+                <input id="BoxD2" type="button" value="" class="btn">
+                <input id="BoxD3" type="button" value="" class="btn">
+                <input id="BoxD4" type="button" value="" class="btn">
+                <br>
+                <br>                
+                <input id="BoxE1" type="button" value="" class="btn">
+                <input id="BoxE2" type="button" value="" class="btn">
+                <input id="BoxE3" type="button" value="" class="btn">   
+                <input id="BoxE4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxF1" type="button" value="" class="btn">
+                <input id="BoxF2" type="button" value="" class="btn">
+                <input id="BoxF3" type="button" value="" class="btn">
+                <input id="BoxF4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxG1" type="button" value="" class="btn">
+                <input id="BoxG2" type="button" value="" class="btn">
+                <input id="BoxG3" type="button" value="" class="btn">
+                <input id="BoxG4" type="button" value="" class="btn">
+                <br>
+                <br>
+                <input id="BoxH1" type="button" value="" class="btn">
+                <input id="BoxH2" type="button" value="" class="btn">
+                <input id="BoxH3" type="button" value="" class="btn">
+                <input id="BoxH4" type="button" value="" class="btn">
+         </div>          
+        </div>
+        </div>
+        </div>
+        </form>
+        <div id="list">
+            <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                <th>name</th>
+                <th>SUBJECT</th> 
+                <th>SUBJECT</th>
+                <th>SUBJECT</th> 
+                <th>SUBJECT</th>
+                <th>SUBJECT</th> 
+                <th>SUBJECT</th>
+                <th>SUBJECT</th>
+                <th>SUBJECT</th>
+                <th>ID number</th>
+                </tr>
+            </thead>
+        <tbody id="wassce-list"></tbody>
+        </table>
+        </div>
+</div>
+<!--end app page-->
+    <!--jquery-->
+    <script src="./setup/js/jquery.js"></script>
+    <!--bootstrap js-->
+    <script src="./setup/js/jquery_1.js"></script>
+    <script src="./setup/js/bootstrap.bundle.js"></script>
+    <!--js-->
+    <script src="./setup/js/app_wassce_1.js"></script>
+    <script src="./setup/js/app_wassce_2.js"></script>
+    <script src="./setup/js/app_wassce_3.js"></script>
+</body>
+</html>
